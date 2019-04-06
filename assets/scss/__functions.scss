@@ -1,0 +1,21 @@
+@function strip-units($number) {
+  @if type-of($number)=='number'and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+
+@function vw($number) {
+  $number: strip-units($number);
+  $number: ($number / 1920) * 100;
+  @return #{$number}vw;
+}
+
+
+@function mobile-vw($number) {
+  $number: strip-units($number);
+  $number: ($number / 640) * 100;
+  @return #{$number}vw;
+}
