@@ -18,8 +18,16 @@ body {
     transition: all .2s;
   }
 
+  .link {
+    transition: all .2s;
+  }
+
   &.dark {
     color: #f4f4f4;
+
+    .link {
+      color: $orange;
+    }
 
     .card {
       background-color: #4a4a4a;
