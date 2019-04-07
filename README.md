@@ -1,7 +1,7 @@
 # curriculo
 
-First, you need to run `npm install` to install all the dependencies.
+Primeiro, é necessário executar o comando `npm install` para instalar todas as dependências.
 
-Then run the command `gulp`.
+Então executar o comando `gulp`.
 
-All the public directory is generate by gulp.
+Todo o diretório `public` será gerado pelo `gulp`.
